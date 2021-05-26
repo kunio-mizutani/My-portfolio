@@ -107,6 +107,8 @@ footer{
   background-color: rgb(27, 235, 250);
   padding: 30px;
   text-align: center;
+  width: 640px;
+  margin: 30px auto;
 }
 .btn a{
   font-size: 24px;
