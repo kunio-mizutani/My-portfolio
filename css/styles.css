@@ -1,0 +1,120 @@
+html{
+  width: 100vh;
+  width: 100vh;
+}
+
+.menu-btn{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  align-items: center;
+  justify-content: center;
+  z-index: 90;
+  cursor: pointer;
+  /* background-color: rgb(48, 168, 48); */
+}
+.menu-btn:hover{
+  opacity: 0.5;
+}
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after  {
+  content: '';
+  /* display: block; */
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: black;
+  position: absolute;
+}
+.menu-btn span::before {
+  bottom: 8px;
+}
+.menu-btn span::after{
+  top: 8px;
+}
+#menu-btn-check{
+  display: none;
+}
+
+#menu-btn-check:checked ~ .menu-btn span{
+  background-color: transparent;
+}
+#menu-btn-check:checked ~ .menu-btn span::before{
+  bottom: 0;
+  transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after{
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.mask{
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1000px;
+  background-color: white;
+  /* pointer-events: none; */
+}
+#menu-btn-check:checked ~ .mask{
+  transform: translateY(-1000px);
+  transition: 0.3s;
+}
+
+.mask ul{
+  list-style: none;
+  text-align: center;
+}
+.mask ul li{
+  margin-top: 150px;
+}
+.mask ul li a{
+  font-size: 36px;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+
+
+
+.img-title img{
+  width: 640px;
+  height: 360px;
+  margin-top: 80px;
+}
+.img-title img:hover{
+  transform: scale(1.01, 1.01);
+  box-shadow: 2px 2px black;
+  transition: 0.3s;
+}
+
+.img-menu img{
+  width: 640px;
+  height: 360px;
+  margin-top: 30px;
+}
+.img-menu img:hover{
+  transform: scale(1.01, 1.01);
+  box-shadow: 2px 2px black;
+  transition: 0.3s;
+}
+
+footer{
+  margin-top: auto;
+  background-color: rgb(27, 235, 250);
+  padding: 30px;
+  text-align: center;
+}
+.btn a{
+  font-size: 24px;
+  text-decoration: none;
+  color: #fff;
+}
