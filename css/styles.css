@@ -1,7 +1,4 @@
-html{
-  width: 100vh;
-  width: 100vh;
-}
+
 
 .menu-btn{
   position: fixed;
@@ -23,7 +20,7 @@ html{
 .menu-btn span::before,
 .menu-btn span::after  {
   content: '';
-  /* display: block; */
+  display: block;
   height: 3px;
   width: 25px;
   border-radius: 3px;
@@ -58,12 +55,12 @@ html{
   left: 0;
   right: 0;
   bottom: 0;
-  height: 1000px;
+  
   background-color: white;
   /* pointer-events: none; */
 }
 #menu-btn-check:checked ~ .mask{
-  transform: translateY(-1000px);
+  transform: translateX(-1000px);
   transition: 0.3s;
 }
 
@@ -82,26 +79,24 @@ html{
 
 }
 
+.marzin{
+  padding: 100px;
+  background-color: transparent;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
 
-
-.img-title img{
+main img{
   width: 640px;
   height: 360px;
-  margin-top: 80px;
+  margin: 30px auto;
 }
-.img-title img:hover{
-  transform: scale(1.01, 1.01);
-  box-shadow: 2px 2px black;
-  transition: 0.3s;
-}
-
-.img-menu img{
-  width: 640px;
-  height: 360px;
-  margin-top: 30px;
-}
-.img-menu img:hover{
+main img:hover{
   transform: scale(1.01, 1.01);
   box-shadow: 2px 2px black;
   transition: 0.3s;
