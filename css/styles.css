@@ -1,5 +1,7 @@
 
-
+body {
+  width: 100%;
+}
 .menu-btn{
   position: fixed;
   top: 10px;
@@ -64,8 +66,8 @@
   /* pointer-events: none; */
 }
 #menu-btn-check:checked ~ .mask{
-  transform: translateY(-1000px);
-  transition: 2s;
+  transform: translateY(-1800px);
+  transition: 2.5s;
 }
 
 .mask ul{
@@ -121,4 +123,26 @@ footer{
   font-size: 24px;
   text-decoration: none;
   color: #fff;
+}
+
+@media (max-width: 700px) {
+
+  .menu-btn{
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    align-items: center;
+    justify-content: center;
+    z-index: 90;
+    cursor: pointer;
+    /* background-color: rgb(48, 168, 48); */
+  }
+  main img{
+    width:100vh;
+    /* height: 360px; */
+    margin: 30px auto;
+  }
 }
