@@ -55,13 +55,17 @@
   left: 0;
   right: 0;
   bottom: 0;
-  
+
+   /* background-image: url(img/portfolio-1.png); */
+   /* background-image: url(https://images.unsplash.com/photo-1533745848184-3db07256e163?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2689&q=80);
+   background-size: 100%;
+   background-repeat: repeat; */
   background-color: white;
   /* pointer-events: none; */
 }
 #menu-btn-check:checked ~ .mask{
-  transform: translateX(-1000px);
-  transition: 0.3s;
+  transform: translateY(-1000px);
+  transition: 2s;
 }
 
 .mask ul{
@@ -79,7 +83,7 @@
 
 }
 
-.marzin{
+.margin{
   padding: 100px;
   background-color: transparent;
 }
@@ -92,9 +96,12 @@ main{
 
 
 main img{
-  width: 640px;
-  height: 360px;
+  width: 100%;
+  /* height: 360px; */
   margin: 30px auto;
+}
+main img:nth-child(1) {
+ margin-bottom: 200px;
 }
 main img:hover{
   transform: scale(1.01, 1.01);
@@ -108,7 +115,7 @@ footer{
   padding: 30px;
   text-align: center;
   width: 640px;
-  margin: 30px auto;
+  margin: 80px auto;
 }
 .btn a{
   font-size: 24px;
